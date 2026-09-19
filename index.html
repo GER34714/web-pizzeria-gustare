@@ -20,12 +20,10 @@
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:85px}body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button{cursor:pointer;border:0}
 header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-filter:blur(12px);border-bottom:1px solid #343434}.nav{max-width:1240px;margin:auto;min-height:70px;padding:10px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:1000;font-size:27px;letter-spacing:2px;color:var(--yellow);line-height:1}.brand img{width:58px;height:42px;object-fit:contain;filter:invert(1);display:block}.brand span{display:none}.brand small{display:block;color:#fff;font-size:9px;letter-spacing:3px;text-align:center;margin-top:5px}.navlinks{display:flex;gap:22px;align-items:center;font-weight:700;font-size:14px}.navlinks a:hover{color:var(--yellow)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:9px;font-weight:900;background:var(--yellow);color:#111;transition:.2s}.btn:hover,.nav-cta:hover{transform:translateY(-2px);background:var(--yellow2)}.cart-pill{background:#292929;color:white;border:1px solid #444;padding:10px 14px;border-radius:999px;font-weight:800;white-space:nowrap}.cart-pill b{background:var(--yellow);color:#111;border-radius:50%;padding:2px 7px;margin-left:5px}
 .hero{min-height:650px;display:flex;align-items:center;position:relative;isolation:isolate;background:#17120b;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;z-index:-3;background:#17120b}.hero-slides{position:absolute;inset:0;z-index:-2;overflow:hidden}.hero-slide{position:absolute;inset:0;background-position:center;background-size:cover;background-repeat:no-repeat;opacity:0;transition:opacity 1s ease}.hero-slide.active{opacity:1}.hero-slides:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.62) 48%,rgba(0,0,0,.25)),linear-gradient(0deg,rgba(0,0,0,.38),rgba(0,0,0,.08))}
-/* ==== HERO CENTRADO ==== */
 .hero-inner{max-width:1240px;width:100%;margin:auto;padding:100px 26px 115px;display:flex;flex-direction:column;align-items:center;text-align:center}
 .hero-brand-logo{display:block;width:min(310px,42vw);max-width:100%;height:auto;margin:0 auto 22px;filter:invert(1) drop-shadow(0 10px 22px rgba(0,0,0,.65));object-fit:contain;object-position:center center}
 .tag{display:inline-block;background:var(--yellow);color:#111;font-size:12px;font-weight:900;letter-spacing:1px;padding:7px 12px;border-radius:4px}.hero h1{font-size:clamp(68px,11vw,145px);line-height:.84;letter-spacing:-5px;margin:22px 0 18px;font-weight:1000;text-shadow:4px 5px 0 #000}.hero h1 span{color:var(--yellow)}.hero h2{font-size:clamp(21px,3vw,34px);letter-spacing:2px}.hero p{max-width:530px;color:#ddd;font-size:17px;margin:15px auto 26px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.btn.outline{background:rgba(0,0,0,.35);border:1px solid white;color:white}.hero-note{margin-top:25px;color:#eee;font-size:13px}
 
-/* ==== CARRUSEL DE BANNERS (imagen completa, horizontal) ==== */
 .banner-carousel{max-width:1200px;margin:26px auto 0;padding:0 20px;position:relative}
 .banner-viewport{border-radius:14px;overflow:hidden;border:1px solid #303030;background:#1b1b1b;box-shadow:0 8px 26px rgba(0,0,0,.4);position:relative}
 .banner-slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease;display:block}
@@ -36,7 +34,6 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-f
 .banner-dots button.active{background:var(--yellow);width:24px;border-radius:9px}
 @media(max-width:560px){.banner-carousel{padding:0 12px}}
 
-/* ==== BANNER AMARILLO DE PROMOS (ahora entre menú y galería) ==== */
 .promo-wrap{max-width:1200px;margin:60px auto 0;padding:0 20px;position:relative;z-index:5}
 .promo{min-height:150px;border-radius:16px;overflow:hidden;position:relative;background:linear-gradient(110deg,#f5b400,#ffda62);color:#111;display:flex;align-items:center;justify-content:space-between;padding:26px 34px;gap:20px;box-shadow:0 16px 45px #0007}
 .promo-copy{max-width:720px}.promo-kicker{font-size:12px;font-weight:1000;letter-spacing:2px}.promo h2{font-size:clamp(25px,4vw,42px);line-height:1.05;margin:5px 0}.promo p{font-weight:600}.promo .btn{background:#111;color:#fff;flex-shrink:0}
@@ -45,8 +42,96 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-f
 .quick-info{max-width:1200px;margin:22px auto 0;padding:0 20px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.quick{background:var(--panel);border:1px solid #303030;border-radius:12px;padding:16px;text-align:center}.quick strong{display:block;color:var(--yellow);font-size:15px}.quick span{font-size:13px;color:#bbb}
 .section{padding:76px 20px}.container{max-width:1200px;margin:auto}.section-head{text-align:center;margin-bottom:32px}.eyebrow{font-size:12px;letter-spacing:3px;color:var(--yellow);font-weight:900}.section-head h2{font-size:clamp(32px,5vw,54px);line-height:1.05;margin-top:7px}.section-head p{color:var(--muted);margin:10px auto 0;max-width:650px}
 .menu-area{background:#151515}.category-bar{display:flex;gap:9px;overflow-x:auto;padding:5px 1px 16px;margin-bottom:20px;scrollbar-width:thin}.category{white-space:nowrap;background:#252525;color:#eee;border:1px solid #3b3b3b;padding:11px 17px;border-radius:999px;font-weight:800}.category.active,.category:hover{background:var(--yellow);color:#111;border-color:var(--yellow)}
-.menu-title{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:24px 0 16px}.menu-title h3{font-size:27px}.menu-title p{font-size:13px;color:#999}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.product{background:var(--panel);border:1px solid #303030;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:.2s}.product:hover{border-color:#8c6c13;transform:translateY(-3px)}.product-img{height:205px;background:#292929;overflow:hidden}.product-img img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .5s ease}.product-img.rotating img{opacity:0}.product-body{padding:17px;display:flex;flex-direction:column;flex:1}.product h4{font-size:20px}.product p{font-size:13px;color:#aaa;margin:5px 0 14px;flex:1}.product-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}.price{font-weight:1000;color:var(--yellow);font-size:21px}.add-btn{background:var(--yellow);color:#111;padding:10px 15px;border-radius:8px;font-weight:1000}.add-btn:hover{background:var(--yellow2)}.custom-note{font-size:12px;color:#888;margin-top:10px}
-.cart-section{background:#0d0d0d}.cart-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:start}.cart-box,.checkout-box{background:var(--panel);border:1px solid #333;border-radius:15px;padding:22px}.cart-box h3,.checkout-box h3{font-size:23px;margin-bottom:15px}.empty{color:#999;text-align:center;padding:35px 10px}.cart-item{display:grid;grid-template-columns:1fr auto;gap:12px;padding:15px 0;border-bottom:1px solid #333}.cart-item:last-child{border-bottom:0}.cart-item{grid-template-columns:1fr auto}.cart-thumb{width:58px;height:58px;border-radius:9px;object-fit:cover;display:block;background:#292929;border:1px solid #444}.cart-item-main{display:flex;align-items:flex-start;gap:11px;min-width:0}.cart-item-main>div{min-width:0}.cart-item strong{display:block}.cart-item small{color:#aaa}.qty{display:flex;align-items:center;gap:10px;margin-top:9px}.qty button{width:28px;height:28px;border-radius:7px;background:#333;color:white;font-weight:900}.qty .remove{background:transparent;color:#aaa;width:auto;padding:0 5px;font-size:12px}.line-price{font-weight:900;color:var(--yellow);white-space:nowrap}.total-row{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #444;padding-top:16px;margin-top:12px;font-size:20px;font-weight:1000}.checkout-box label{display:block;font-size:13px;color:#ccc;margin:12px 0 5px}.checkout-box input,.checkout-box textarea,.checkout-box select{width:100%;background:#111;border:1px solid #444;border-radius:8px;padding:12px;color:white;outline:none}.checkout-box input:focus,.checkout-box textarea:focus{border-color:var(--yellow)}.checkout-box textarea{resize:vertical;min-height:80px}.checkout-btn{width:100%;margin-top:17px;background:var(--green);color:#062b12;padding:15px;border-radius:9px;font-weight:1000;font-size:16px}.checkout-btn:disabled{opacity:.4;cursor:not-allowed}.fine{font-size:12px;color:#888;margin-top:10px}
+.menu-title{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:24px 0 16px}.menu-title h3{font-size:27px}.menu-title p{font-size:13px;color:#999}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+
+.product{background:var(--panel);border:1px solid #303030;border-radius:14px;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:.2s;position:relative}
+.product:hover{border-color:#8c6c13;transform:translateY(-3px)}
+.product-img{height:205px;background:#292929;overflow:hidden;position:relative}
+.product-img img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .5s ease}
+
+.badge{position:absolute;top:12px;left:12px;z-index:3;background:var(--yellow);color:#111;font-size:11px;font-weight:1000;letter-spacing:.5px;padding:6px 10px;border-radius:999px;box-shadow:0 4px 12px rgba(0,0,0,.4);text-transform:uppercase;display:flex;align-items:center;gap:4px}
+.badge.badge-clasica{background:linear-gradient(135deg,#ffd34d,#f5b400);color:#111}
+.badge.badge-especial{background:linear-gradient(135deg,#ff6a00,#e63900);color:#fff}
+.badge.badge-super{background:linear-gradient(135deg,#8a2be2,#e056fd);color:#fff}
+.badge.badge-doble{background:linear-gradient(135deg,#ffe600,#f5b400);color:#111}
+.badge.badge-promo{background:linear-gradient(135deg,#25d366,#0a8f3d);color:#fff}
+
+.product-body{padding:17px;display:flex;flex-direction:column;flex:1}
+.product h4{font-size:20px;margin-bottom:6px}
+.product .ingredients{font-size:12px;color:#c9c9c9;margin:0 0 10px;line-height:1.5}
+.product .ingredients b{color:var(--yellow);font-weight:900}
+.product p.desc{font-size:13px;color:#aaa;margin:0 0 14px;flex:1}
+.product-foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.price{font-weight:1000;color:var(--yellow);font-size:21px}
+.add-btn{background:var(--yellow);color:#111;padding:10px 15px;border-radius:8px;font-weight:1000}.add-btn:hover{background:var(--yellow2)}
+.custom-note{font-size:12px;color:#888;margin-top:10px}
+
+/* ===== CARRUSEL DE PROMOS (Opción A) ===== */
+.promo-carousel{position:relative;margin-bottom:36px}
+.promo-viewport{overflow:hidden;border-radius:16px}
+.promo-track{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1);touch-action:pan-y}
+.promo-slide{flex:0 0 100%;min-width:100%}
+.promo-slide .product{max-width:100%;border-color:#3b3b3b}
+.promo-slide .product-img{height:260px}
+.promo-slide .product-body{padding:22px}
+.promo-slide .product h4{font-size:24px}
+.promo-slide .product p.desc{font-size:14px;color:#bbb}
+.promo-slide .ingredients{font-size:13px}
+.promo-slide .price{font-size:24px}
+.promo-slide .add-btn{padding:12px 20px;font-size:14px}
+.promo-carousel-nav{position:absolute;top:50%;left:0;right:0;transform:translateY(-50%);display:flex;justify-content:space-between;pointer-events:none;z-index:5;padding:0 12px}
+.promo-carousel-nav button{pointer-events:auto;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,.7);color:#fff;font-size:22px;font-weight:900;border:1px solid rgba(255,255,255,.15);transition:.2s}
+.promo-carousel-nav button:hover{background:var(--yellow);color:#111;transform:scale(1.08)}
+.promo-carousel-dots{display:flex;gap:8px;justify-content:center;margin-top:14px}
+.promo-carousel-dots button{width:9px;height:9px;border-radius:50%;background:#555;transition:.25s}
+.promo-carousel-dots button.active{background:var(--yellow);width:26px;border-radius:9px}
+@media(max-width:850px){
+  .promo-slide .product-img{height:220px}
+  .promo-carousel-nav{padding:0 8px}
+  .promo-carousel-nav button{width:38px;height:38px;font-size:18px}
+}
+@media(max-width:560px){
+  .promo-slide .product-img{height:190px}
+  .promo-slide .product h4{font-size:20px}
+  .promo-slide .price{font-size:22px}
+}
+
+/* ===== CARRITO ===== */
+.cart-section{background:#0d0d0d}
+.cart-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:22px;align-items:start}
+.cart-box{background:var(--panel);border:1px solid #333;border-radius:15px;padding:22px;display:flex;flex-direction:column;max-height:80vh}
+.checkout-box{background:var(--panel);border:1px solid #333;border-radius:15px;padding:22px}
+.cart-box h3,.checkout-box h3{font-size:23px;margin-bottom:15px}
+
+#cartItems{flex:1;overflow-y:auto;padding-right:6px;scrollbar-width:thin}
+#cartItems::-webkit-scrollbar{width:8px}
+#cartItems::-webkit-scrollbar-track{background:#151515;border-radius:4px}
+#cartItems::-webkit-scrollbar-thumb{background:#444;border-radius:4px}
+#cartItems::-webkit-scrollbar-thumb:hover{background:var(--yellow)}
+
+.empty{color:#999;text-align:center;padding:35px 10px}
+
+.cart-item{display:flex;flex-direction:column;gap:10px;padding:15px 0;border-bottom:1px solid #333}
+.cart-item:last-child{border-bottom:0}
+.cart-item-main{display:flex;align-items:flex-start;gap:11px;min-width:0}
+.cart-item-main>div{min-width:0;flex:1}
+.cart-thumb{width:58px;height:58px;border-radius:9px;object-fit:cover;display:block;background:#292929;border:1px solid #444;flex-shrink:0}
+.cart-item strong{display:block;word-break:break-word}
+.cart-item small{color:#aaa}
+.qty{display:flex;align-items:center;gap:10px;margin-top:9px;flex-wrap:wrap}
+.qty button{width:28px;height:28px;border-radius:7px;background:#333;color:white;font-weight:900}
+.qty .remove{background:transparent;color:#aaa;width:auto;padding:0 5px;font-size:12px}
+.line-price{align-self:flex-end;font-weight:900;color:var(--yellow);white-space:nowrap}
+
+.total-row{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #444;padding-top:16px;margin-top:12px;font-size:20px;font-weight:1000}
+.checkout-box label{display:block;font-size:13px;color:#ccc;margin:12px 0 5px}
+.checkout-box input,.checkout-box textarea,.checkout-box select{width:100%;background:#111;border:1px solid #444;border-radius:8px;padding:12px;color:white;outline:none}
+.checkout-box input:focus,.checkout-box textarea:focus{border-color:var(--yellow)}
+.checkout-box textarea{resize:vertical;min-height:80px}
+.checkout-btn{width:100%;margin-top:17px;background:var(--green);color:#062b12;padding:15px;border-radius:9px;font-weight:1000;font-size:16px}
+.checkout-btn:disabled{opacity:.4;cursor:not-allowed}
+.fine{font-size:12px;color:#888;margin-top:10px;line-height:1.6}
  
 .gallery-section{background:#0d0d0d}
 .gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
@@ -72,17 +157,42 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-f
 .delivery{background:linear-gradient(#000b,#000d),url("https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1800&q=85") center/cover;text-align:center}.delivery h2{font-size:clamp(34px,6vw,64px);line-height:1.05}.delivery h2 span{color:var(--yellow)}.delivery p{max-width:650px;margin:15px auto;color:#ddd}.delivery strong{display:block;color:var(--yellow);font-size:clamp(32px,5vw,55px);margin:12px}
 .hours{background:var(--yellow);color:#111;text-align:center}.hours h2{font-size:clamp(32px,5vw,55px)}.hours .time{font-size:clamp(25px,4vw,43px);font-weight:1000;margin:8px}.hours p{font-weight:700}
 footer{padding:55px 20px 35px;text-align:center;background:#0a0a0a;border-top:1px solid #292929;color:#aaa}footer .footer-logo{display:block;width:min(210px,55vw);height:auto;max-height:100px;object-fit:contain;margin:0 auto 18px;filter:invert(1) drop-shadow(0 6px 14px rgba(0,0,0,.55))}footer strong{display:block;color:#fff;font-size:24px;letter-spacing:2px}footer a{color:var(--yellow);font-weight:800}
-.floating-cart{position:fixed;right:20px;bottom:20px;z-index:40;background:var(--yellow);color:#111;padding:14px 18px;border-radius:999px;box-shadow:0 8px 30px #0009;font-weight:1000;display:none}.floating-cart.show{display:block}
-/* Botón flotante de WhatsApp */
-.whatsapp-float{position:fixed;left:20px;bottom:20px;z-index:40;width:60px;height:60px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(0,0,0,.5);transition:transform .2s, box-shadow .2s;text-decoration:none}.whatsapp-float:hover{transform:scale(1.08);box-shadow:0 8px 30px rgba(37,211,102,.5)}.whatsapp-float svg{width:34px;height:34px;fill:#fff}
-/* ==== OCULTAR BOTONES FLOTANTES EN FOOTER ==== */
-.floating-cart,.whatsapp-float{transition:opacity .3s ease, transform .3s ease}
-.floating-cart.hide-floating,.whatsapp-float.hide-floating{opacity:0;pointer-events:none;transform:translateY(20px)}
+
+/* ===== BOTÓN FLOTANTE DEL CARRITO ===== */
+.floating-cart{position:fixed;right:12px;bottom:14px;z-index:45;background:var(--yellow);color:#111;padding:14px 18px;border-radius:999px;box-shadow:0 8px 30px #0009;font-weight:1000;display:none;transition:opacity .35s ease, transform .35s ease}
+.floating-cart.show{display:block}
+
+/* ===== BOTÓN FLOTANTE WHATSAPP (+30%) ===== */
+.whatsapp-float{
+  position:fixed;
+  right:0;
+  bottom:14px;
+  z-index:44;
+  width:46px;
+  height:46px;
+  background:#25d366;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:-6px 0 24px rgba(0,0,0,.5);
+  text-decoration:none;
+  overflow:hidden;
+  padding:4px;
+  border-radius:50% 0 0 50%;
+  transition:transform .3s ease, opacity .3s ease;
+}
+.whatsapp-float:hover{transform:translateX(-4px)}
+.whatsapp-float img{width:100%;height:100%;object-fit:contain;display:block;border-radius:50%}
+
+.whatsapp-float.hide-because-cart{opacity:0;pointer-events:none;transform:translateX(100%)}
+.floating-cart.hide-floating,.whatsapp-float.hide-floating{opacity:0;pointer-events:none}
+.floating-cart.hide-on-hero{opacity:0;pointer-events:none;transform:translateY(20px)}
+
 @keyframes logoNeonPulse{0%,100%{filter:invert(1) drop-shadow(0 0 3px rgba(245,180,0,.22)) drop-shadow(0 0 7px rgba(255,211,77,.10))}50%{filter:invert(1) drop-shadow(0 0 6px rgba(245,180,0,.42)) drop-shadow(0 0 13px rgba(255,211,77,.20))}}
 .brand img,.hero-brand-logo,footer .footer-logo{animation:logoNeonPulse 2.8s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.brand img,.hero-brand-logo,footer .footer-logo{animation:none}}
 @media(max-width:850px){.navlinks{display:none}.nav{padding:10px 15px}.hero{min-height:590px}.hero-inner{padding:90px 20px 100px}.hero:before{background-position:60% center}.hero-brand-logo{width:min(260px,55vw);margin:0 auto 18px}.hero-inner{position:relative;z-index:2}.promo{padding:23px;align-items:flex-start;flex-direction:column}.promo .btn{align-self:flex-start}.quick-info{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.cart-layout{grid-template-columns:1fr}.section{padding:60px 15px}}
-@media(max-width:560px){.brand{font-size:24px}.brand img{width:52px;height:38px}.hero{min-height:570px}.hero h1{font-size:70px;letter-spacing:-3px}.hero p{font-size:15px}.hero-brand-logo{width:min(220px,62vw);margin:0 auto 18px;filter:invert(1) drop-shadow(0 8px 18px rgba(0,0,0,.65))}.hero-inner{position:relative;z-index:2}.hero-actions{flex-direction:column}.hero-actions .btn{width:100%}.promo-wrap{padding:0 12px;margin-top:40px}.promo{min-height:175px}.products{grid-template-columns:1fr}.product{display:grid;grid-template-columns:115px 1fr}.product-img{height:100%;min-height:155px}.product-body{padding:13px}.product h4{font-size:17px}.product p{font-size:12px}.price{font-size:18px}.add-btn{padding:9px 11px}.menu-title{align-items:start;flex-direction:column}.cart-box,.checkout-box{padding:17px}.floating-cart{right:12px;bottom:12px}.whatsapp-float{left:12px;bottom:12px;width:54px;height:54px}.whatsapp-float svg{width:30px;height:30px}}
+@media(max-width:560px){.brand{font-size:24px}.brand img{width:52px;height:38px}.hero{min-height:570px}.hero h1{font-size:70px;letter-spacing:-3px}.hero p{font-size:15px}.hero-brand-logo{width:min(220px,62vw);margin:0 auto 18px;filter:invert(1) drop-shadow(0 8px 18px rgba(0,0,0,.65))}.hero-inner{position:relative;z-index:2}.hero-actions{flex-direction:column}.hero-actions .btn{width:100%}.promo-wrap{padding:0 12px;margin-top:40px}.promo{min-height:175px}.products{grid-template-columns:1fr}.product{display:grid;grid-template-columns:115px 1fr}.product-img{height:100%;min-height:155px}.product-body{padding:13px}.product h4{font-size:17px}.product p{font-size:12px}.price{font-size:18px}.add-btn{padding:9px 11px}.menu-title{align-items:start;flex-direction:column}.cart-box,.checkout-box{padding:17px}.floating-cart{right:10px;bottom:10px;padding:12px 14px}.whatsapp-float{right:0;bottom:10px;width:39px;height:39px}}
 </style>
 </head>
 <body>
@@ -114,10 +224,9 @@ footer{padding:55px 20px 35px;text-align:center;background:#0a0a0a;border-top:1p
 PEDIR POR WHATSAPP
 </a>
 </div>
-<div class="hero-note">🛵 Envíos desde $2.500 según la zona · Escobar</div>
+<div class="hero-note">🛵 Envío aparte según tu zona · Se abona por transferencia previa</div>
 </div></section>
 
-<!-- ==== CARRUSEL DE BANNERS (imagen completa, horizontal) ==== -->
 <div class="banner-carousel">
   <div class="banner-viewport" id="bannerViewport">
     <a class="banner-slide active" href="https://freeimage.host/i/nziHXQ2" target="_blank" rel="noopener">
@@ -138,13 +247,14 @@ PEDIR POR WHATSAPP
 </div>
 
 <div class="quick-info">
-<div class="quick"><strong>🛵 ENVÍOS</strong><span>Desde $2.500 según zona</span></div>
+<div class="quick"><strong>🛵 ENVÍOS</strong><span>Se cobra aparte según tu zona</span></div>
 <div class="quick"><strong>📍 ESCOBAR</strong><span>Consultá cobertura por WhatsApp</span></div>
 <div class="quick"><strong>🕢 MAR. A DOM.</strong><span>19:30 a 23:30 hs · Lunes cerrado</span></div>
 </div>
 
 <section class="section menu-area" id="menu"><div class="container">
 <div class="section-head"><div class="eyebrow">ELEGÍ TUS FAVORITOS</div><h2>NUESTRO MENÚ</h2><p>Sumá todos los productos que quieras al carrito. Al finalizar, te enviamos el pedido completo a WhatsApp.</p></div>
+
 <div class="category-bar" id="categoryBar">
 <button class="category active" data-cat="Todas">Ver todo</button>
 <button class="category" data-cat="Pizzas">🍕 Pizzas</button>
@@ -153,13 +263,11 @@ PEDIR POR WHATSAPP
 <div id="menuContent"></div>
 </div></section>
 
-<!-- ==== BANNER AMARILLO DE PROMOS (ahora entre menú y galería) ==== -->
 <div class="promo-wrap"><div class="promo" aria-live="polite">
 <div class="promo-copy"><div class="promo-kicker" id="promoKicker">PROMOCIONES GUSTARE</div><h2 id="promoTitle">¡Tu próxima comida favorita te espera!</h2><p id="promoText">Descubrí el menú y armá tu pedido en unos pasos.</p></div>
 <a class="btn" href="#menu">VER MENÚ →</a>
 </div><div class="promo-dots" id="promoDots"><button class="active" aria-label="Promoción 1"></button><button aria-label="Promoción 2"></button><button aria-label="Promoción 3"></button></div></div>
 
-<!-- ===== GALERÍA (debajo del banner amarillo) ===== -->
 <section class="section gallery-section" id="galeria">
 <div class="container">
   <div class="section-head">
@@ -168,12 +276,10 @@ PEDIR POR WHATSAPP
     <p>Conocé algunas de nuestras pizzas y preparaciones. Tocá una imagen para verla en grande.</p>
   </div>
   <div class="gallery-grid" id="galleryGrid">
-    <!-- Las 4 tarjetas visibles rotan mezclando aleatoriamente todas las fotos -->
     <article class="gallery-card" data-slot="0"><img src="https://iili.io/nz45jPn.md.jpg" alt="GUSTARE pizza" loading="lazy"></article>
     <article class="gallery-card" data-slot="1"><img src="https://iili.io/nz45hMX.md.jpg" alt="GUSTARE pizza" loading="lazy"></article>
     <article class="gallery-card" data-slot="2"><img src="https://iili.io/nz45Xnt.md.jpg" alt="GUSTARE pizza" loading="lazy"></article>
     <article class="gallery-card" data-slot="3"><img src="https://iili.io/nz45VtI.md.jpg" alt="GUSTARE pizza" loading="lazy"></article>
-    <!-- Contenedor donde el botón "Ver más" va agregando de a 4 fotos -->
     <div class="gallery-extra" id="galleryExtra"></div>
   </div>
   <div class="gallery-more"><button class="btn" id="galleryMore" type="button">VER MÁS FOTOS</button></div>
@@ -192,18 +298,23 @@ PEDIR POR WHATSAPP
 <section class="section cart-section" id="pedido"><div class="container">
 <div class="section-head"><div class="eyebrow">ANTES DE ENVIAR</div><h2>ARMÁ TU PEDIDO</h2><p>Revisá las cantidades, completá tus datos y mandá todo junto por WhatsApp.</p></div>
 <div class="cart-layout">
-<div class="cart-box"><h3>🛒 Tu carrito</h3><div id="cartItems"><div class="empty">Todavía no agregaste productos.<br>Elegí algo rico del menú para empezar.</div></div><div class="total-row"><span>Total estimado</span><span id="cartTotal">$0</span></div><p class="fine">El costo de envío se confirma según tu zona. Los precios pueden ser confirmados por el local al recibir el pedido.</p></div>
+<div class="cart-box">
+  <h3>🛒 Tu carrito</h3>
+  <div id="cartItems"><div class="empty">Todavía no agregaste productos.<br>Elegí algo rico del menú para empezar.</div></div>
+  <div class="total-row"><span>Total productos</span><span id="cartTotal">$0</span></div>
+  <p class="fine">✅ Precios finales (sin envío incluido).<br>🛵 El envío se cobra aparte según la zona que indiques.<br>💳 Se abona por transferencia previa.</p>
+</div>
 <form class="checkout-box" id="checkoutForm"><h3>📲 Datos del pedido</h3>
 <label for="customerName">Tu nombre</label><input id="customerName" placeholder="¿Cómo te llamás?" required>
 <input type="hidden" id="deliveryType" value="Envío a domicilio">
-<div id="addressWrap"><label for="customerAddress">Dirección y zona</label><input id="customerAddress" placeholder="Calle, número, barrio o localidad" required></div>
+<div id="addressWrap"><label for="customerAddress">Dirección y zona (para calcular el envío)</label><input id="customerAddress" placeholder="Calle, número, barrio o localidad" required></div>
 <label for="customerNotes">Aclaraciones (opcional)</label><textarea id="customerNotes" placeholder="Ej.: sin aceitunas, tocar timbre, medio de pago..."></textarea>
 <button class="checkout-btn" id="sendOrder" type="submit" disabled>ENVIAR PEDIDO POR WHATSAPP</button>
 <p class="fine">Al tocar el botón se abrirá WhatsApp con el detalle completo para que puedas revisarlo y enviarlo.</p>
 </form>
 </div></div></section>
 
-<section class="section delivery" id="envios"><div class="container"><div class="eyebrow">RECIBÍ TU PEDIDO</div><h2>LLEVAMOS GUSTARE<br><span>A TU CASA</span></h2><p>Realizamos envíos en Escobar. El costo comienza desde $2.500 y puede variar según la zona.</p><strong>DESDE $2.500</strong><p>Consultá el costo correspondiente a tu zona al realizar el pedido.</p><a class="btn" href="https://wa.me/5493484591112?text=Hola%20GUSTARE%2C%20quiero%20consultar%20el%20env%C3%ADo%20a%20mi%20zona." target="_blank" rel="noopener">CONSULTAR ENVÍO</a></div></section>
+<section class="section delivery" id="envios"><div class="container"><div class="eyebrow">RECIBÍ TU PEDIDO</div><h2>LLEVAMOS GUSTARE<br><span>A TU CASA</span></h2><p>Realizamos envíos en Escobar. El costo se cobra aparte y varía según tu zona.</p><strong>SEGÚN TU ZONA</strong><p>Indicá tu dirección y zona al armar el pedido para que podamos confirmarte el costo de envío.</p><p style="margin-top:8px">💳 Se abona por transferencia previa.</p><a class="btn" href="https://wa.me/5493484591112?text=Hola%20GUSTARE%2C%20quiero%20consultar%20el%20env%C3%ADo%20a%20mi%20zona." target="_blank" rel="noopener">CONSULTAR ENVÍO</a></div></section>
 <section class="section hours" id="horarios"><div class="container"><h2>¿CUÁNDO ESTAMOS?</h2><div class="time">MARTES A DOMINGO</div><p>19:30 A 23:30 HS</p><p style="margin-top:8px">Lunes cerrado</p></div></section>
 
 <footer>
@@ -220,60 +331,241 @@ PEDIR POR WHATSAPP
 
 <button class="floating-cart" id="floatingCart" onclick="document.querySelector('#pedido').scrollIntoView({behavior:'smooth'})">🛒 Ver pedido · <span id="floatCount">0</span> · <span id="floatTotal">$0</span></button>
 
-<!-- Botón flotante oficial de WhatsApp -->
-<a class="whatsapp-float" href="https://wa.me/5493484591112?text=Hola%20GUSTARE%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.9 15.9 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.31 22.594c-.39 1.1-2.26 2.1-3.12 2.18-.86.08-1.66.38-5.6-1.16-4.74-1.86-7.72-6.66-7.96-6.98-.24-.32-1.9-2.52-1.9-4.8 0-2.28 1.2-3.4 1.62-3.86.42-.46.92-.58 1.22-.58.3 0 .6.002.86.014.28.012.66-.106 1.02.78.38.92 1.28 3.16 1.4 3.4.12.24.2.52.04.84-.16.32-.24.52-.48.8-.24.28-.5.62-.72.84-.24.24-.48.5-.2.98.28.48 1.24 2.04 2.66 3.3 1.82 1.62 3.36 2.12 3.84 2.36.48.24.76.2 1.04-.12.28-.32 1.2-1.4 1.52-1.88.32-.48.64-.4 1.08-.24.44.16 2.8 1.32 3.28 1.56.48.24.8.36.92.56.12.2.12 1.16-.18 2.26z"/>
-</svg>
+<a class="whatsapp-float" id="whatsappFloat" href="https://wa.me/5493484591112?text=Hola%20GUSTARE%2C%20quiero%20hacer%20un%20pedido." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <img src="https://iili.io/nzs94ae.md.png" alt="WhatsApp GUSTARE">
 </a>
 
 <script>
 const PHONE="5493484591112";
 const money=n=>new Intl.NumberFormat("es-AR",{style:"currency",currency:"ARS",maximumFractionDigits:0}).format(n);
+
 const products=[
 // ===== PIZZAS =====
-{id:"pz-muzza",cat:"Pizzas",name:"Muzza",desc:"Salsa de tomate, abundante muzzarella y el clásico sabor de una buena pizza.",price:10000,img:"https://iili.io/nz6tABa.md.webp"},
-{id:"pz-doble-muzza",cat:"Pizzas",name:"Doble Muzza",desc:"El doble de muzzarella para los amantes del queso.",price:15000,img:"https://iili.io/nz6D6Vn.png"},
-{id:"pz-primavera",cat:"Pizzas",name:"Primavera",desc:"Muzzarella, tomate fresco y vegetales de estación.",price:15000,img:"https://iili.io/nz6pho7.md.png"},
-{id:"pz-primavera-jamon",cat:"Pizzas",name:"Primavera con Jamón (Especial)",desc:"Primavera con el agregado de jamón. Una combinación especial.",price:18000,img:"https://iili.io/nz6pho7.md.png"},
-{id:"pz-fugazzeta",cat:"Pizzas",name:"Fugazzeta",desc:"Mucho queso, cebolla y el sabor clásico de una fugazzeta.",price:15000,img:"https://iili.io/nzP9p6X.png"},
-{id:"pz-jamon-morron",cat:"Pizzas",name:"Jamón y Morrón (Especial)",desc:"Muzzarella, jamón y morrones asados.",price:18000,img:"https://iili.io/nzP3ug1.md.jpg"},
-{id:"pz-napolitana",cat:"Pizzas",name:"Napolitana (Especial)",desc:"Muzzarella, tomate, ajo, orégano y un toque de oliva.",price:18000,img:"https://iili.io/nzPFbn4.png"},
-{id:"pz-calabressa",cat:"Pizzas",name:"Calabressa (Especial)",desc:"Muzzarella, salame calabrés y un toque picante.",price:18000,img:"https://iili.io/nzPK6Wx.md.png"},
-{id:"pz-jamon-anana",cat:"Pizzas",name:"Jamón y Ananá (Súper Especial)",desc:"La combinación agridulce que divide opiniones pero nunca falla.",price:22000,img:"https://iili.io/nz475Ol.md.jpg"},
-{id:"pz-cochina",cat:"Pizzas",name:"Cochina (Súper Especial)",desc:"Cargada con todo: muzzarella, jamón, morrones, aceitunas y más.",price:25000,img:"https://iili.io/nz47ls9.md.jpg"},
-// ===== PROMOS (variantes que rotan: imagen + nombre + descripción juntos) =====
-{id:"promo-1",cat:"Promos",price:27000,img:"https://iili.io/nz6tABa.md.webp",
- name:"Promo 1: 3 Muzzas",desc:"Tres pizzas de muzzarella para compartir. La promo más pedida.",
- variants:[
-   {name:"Promo 1: 3 Muzzas",desc:"Tres pizzas de muzzarella para compartir. La promo más pedida.",img:"https://iili.io/nz6tABa.md.webp"},
-   {name:"Promo 1: 3 Doble Muzza",desc:"Tres pizzas de doble muzzarella para los amantes del queso.",img:"https://iili.io/nz6D6Vn.png"},
-   {name:"Promo 1: 3 Primaveras",desc:"Tres pizzas primavera con tomate fresco y vegetales de estación.",img:"https://iili.io/nz6pho7.md.png"},
-   {name:"Promo 1: 3 Napolitanas",desc:"Tres napolitanas con tomate, ajo, orégano y un toque de oliva.",img:"https://iili.io/nzPFbn4.png"}
- ]},
-{id:"promo-2",cat:"Promos",price:35000,img:"https://iili.io/nzP3ug1.md.jpg",
- name:"Promo 2: 2 Especiales",desc:"Dos pizzas especiales a elección. Ideal para los que quieren probar de todo.",
- variants:[
-   {name:"Promo 2: 2 Jamón y Morrón",desc:"Dos pizzas de jamón y morrón con muzzarella y morrones asados.",img:"https://iili.io/nzP3ug1.md.jpg"},
-   {name:"Promo 2: 2 Napolitanas",desc:"Dos napolitanas con tomate, ajo, orégano y un toque de oliva.",img:"https://iili.io/nzPFbn4.png"},
-   {name:"Promo 2: 2 Calabressas",desc:"Dos calabressas con salame calabrés y un toque picante.",img:"https://iili.io/nzPK6Wx.md.png"},
-   {name:"Promo 2: 2 Fugazzetas",desc:"Dos fugazzetas con mucho queso, cebolla y el sabor clásico.",img:"https://iili.io/nzP9p6X.png"}
- ]},
-{id:"promo-3",cat:"Promos",price:45000,img:"https://iili.io/nz475Ol.md.jpg",
- name:"Promo 3: 1 Muzza + 2 Especiales",desc:"Una muzza y dos especiales. La combinación perfecta para grupos.",
- variants:[
-   {name:"Promo 3: 1 Muzza + 2 Especiales",desc:"Una muzza y dos especiales. La combinación perfecta para grupos.",img:"https://iili.io/nz475Ol.md.jpg"},
-   {name:"Promo 3: 1 Muzza + 2 Cochinas",desc:"Una muzza y dos cochinas cargadas con todo.",img:"https://iili.io/nz47ls9.md.jpg"},
-   {name:"Promo 3: 1 Muzza + 2 Jamón y Ananá",desc:"Una muzza y dos jamón y ananá, la combinación agridulce.",img:"https://iili.io/nz475Ol.md.jpg"},
-   {name:"Promo 3: 1 Muzza + 2 Primaveras",desc:"Una muzza y dos primaveras con vegetales frescos.",img:"https://iili.io/nz6pho7.md.png"}
- ]}
+{id:"pz-muzza",cat:"Pizzas",name:"Muzza",desc:"El clásico sabor de siempre, con abundante muzzarella y salsa casera.",price:10000,img:"https://iili.io/nz6tABa.md.webp",
+ badge:{text:"Clásica",type:"clasica"},
+ ingredients:"Muzzarella · Salsa de tomate · Orégano"},
+
+{id:"pz-doble-muzza",cat:"Pizzas",name:"Doble Muzza",desc:"Para los amantes del queso: el doble de muzzarella en cada porción.",price:15000,img:"https://iili.io/nz6D6Vn.png",
+ badge:{text:"Doble Queso",type:"doble"},
+ ingredients:"Doble muzzarella · Salsa de tomate · Orégano"},
+
+{id:"pz-primavera",cat:"Pizzas",name:"Primavera",desc:"Liviana y fresca, con vegetales de estación y tomate natural.",price:15000,img:"https://iili.io/nz6pho7.md.png",
+ ingredients:"Muzzarella · Tomate fresco · Vegetales de estación · Orégano"},
+
+{id:"pz-primavera-jamon",cat:"Pizzas",name:"Primavera con Jamón",desc:"La frescura de la primavera con el agregado de jamón cocido.",price:18000,img:"https://iili.io/nz6pho7.md.png",
+ badge:{text:"Especial",type:"especial"},
+ ingredients:"Muzzarella · Tomate · Vegetales · Jamón cocido · Orégano"},
+
+{id:"pz-fugazzeta",cat:"Pizzas",name:"Fugazzeta",desc:"Mucho queso, cebolla dorada y el sabor clásico que nunca falla.",price:15000,img:"https://iili.io/nzP9p6X.png",
+ badge:{text:"Clásica",type:"clasica"},
+ ingredients:"Muzzarella · Cebolla · Orégano · Aceite de oliva"},
+
+{id:"pz-jamon-morron",cat:"Pizzas",name:"Jamón y Morrón",desc:"Muzzarella, jamón y morrones asados. Combinación infaltable.",price:18000,img:"https://iili.io/nzP3ug1.md.jpg",
+ badge:{text:"Especial",type:"especial"},
+ ingredients:"Muzzarella · Jamón · Morrones asados · Orégano"},
+
+{id:"pz-napolitana",cat:"Pizzas",name:"Napolitana",desc:"Tomate, ajo, orégano y un toque de oliva. Sabor auténtico italiano.",price:18000,img:"https://iili.io/nzPFbn4.png",
+ badge:{text:"Especial",type:"especial"},
+ ingredients:"Muzzarella · Tomate · Ajo · Orégano · Aceite de oliva"},
+
+{id:"pz-calabressa",cat:"Pizzas",name:"Calabressa",desc:"Salame calabrés con un toque que despierta el paladar.",price:18000,img:"https://iili.io/nzPK6Wx.md.png",
+ ingredients:"Muzzarella · Salame calabrés · Orégano"},
+
+{id:"pz-jamon-anana",cat:"Pizzas",name:"Jamón y Ananá",desc:"La combinación agridulce que divide opiniones pero nunca falla.",price:22000,img:"https://iili.io/nz475Ol.md.jpg",
+ badge:{text:"Súper Especial",type:"super"},
+ ingredients:"Muzzarella · Jamón · Ananá · Orégano"},
+
+{id:"pz-cochina",cat:"Pizzas",name:"Cochina",desc:"Cargada con todo: muzzarella, jamón, morrones, aceitunas y más.",price:25000,img:"https://iili.io/nz47ls9.md.jpg",
+ badge:{text:"Súper Especial",type:"super"},
+ ingredients:"Muzzarella · Jamón · Morrones · Aceitunas · Huevo · Orégano"},
+
+// ===== PROMOS =====
+{id:"promo-1",cat:"Promos",name:"3 Pizzas Muzza",desc:"Tres pizzas de muzzarella para compartir. La promo más pedida.",price:27000,img:"https://iili.io/nz6tABa.md.webp",
+ badge:{text:"Promo",type:"promo"},
+ ingredients:"3 pizzas de muzzarella · Salsa de tomate · Orégano"},
+
+{id:"promo-2",cat:"Promos",name:"2 Pizzas Especiales",desc:"Dos pizzas especiales a elección. Ideal para probar de todo.",price:35000,img:"https://iili.io/nzP3ug1.md.jpg",
+ badge:{text:"Promo",type:"promo"},
+ ingredients:"2 pizzas especiales a elección · Ingredientes frescos"},
+
+{id:"promo-3",cat:"Promos",name:"1 Muzza + 2 Especiales",desc:"Una muzza y dos especiales. La combinación perfecta para grupos.",price:45000,img:"https://iili.io/nz475Ol.md.jpg",
+ badge:{text:"Promo",type:"promo"},
+ ingredients:"1 pizza de muzzarella + 2 especiales a elección"}
 ];
+
 let cart={};let currentCat="Todas";
 const menuContent=document.getElementById("menuContent");
+
+/* ===== RENDER DEL MENÚ CON CARRUSEL DE PROMOS ===== */
 function renderMenu(){
- const cats=currentCat==="Todas"?["Promos","Pizzas"]:[currentCat];
- menuContent.innerHTML=cats.map(cat=>`<section class="menu-group"><div class="menu-title"><div><h3>${cat==="Promos"?"🔥 "+cat:cat==="Pizzas"?"🍕 "+cat:cat}</h3><p>${cat==="Promos"?"Aprovechá las promos de Gustare y compartí algo rico.":"Elegí tus favoritos y sumalos al pedido."}</p></div></div><div class="products">${products.filter(p=>p.cat===cat).map(p=>`<article class="product" data-product-id="${p.id}"><div class="product-img"><img src="${p.img}" alt="${p.name}" loading="lazy"></div><div class="product-body"><h4>${p.name}</h4><p>${p.desc}</p><div class="product-foot"><span class="price">${p.price===null?"Consultar":money(p.price)}</span><button class="add-btn" onclick="addToCart('${p.id}')">＋ Agregar</button></div>${p.price===null?'<div class="custom-note">El precio se confirma por WhatsApp.</div>':""}</div></article>`).join("")}</div></section>`).join("");
+  const cats=currentCat==="Todas"?["Promos","Pizzas"]:[currentCat];
+
+  let html="";
+
+  if(cats.includes("Promos")){
+    const promosList=products.filter(p=>p.cat==="Promos");
+    html+=`
+      <section class="menu-group">
+        <div class="menu-title">
+          <div>
+            <h3>🔥 Promos</h3>
+            <p>Aprovechá las promos de Gustare y compartí algo rico.</p>
+          </div>
+        </div>
+        <div class="promo-carousel" id="promoCarousel">
+          <div class="promo-viewport">
+            <div class="promo-track" id="promoTrack">
+              ${promosList.map(p=>`
+                <div class="promo-slide">
+                  <article class="product" data-product-id="${p.id}">
+                    <div class="product-img">
+                      ${p.badge?`<span class="badge badge-${p.badge.type}">${p.badge.text}</span>`:""}
+                      <img src="${p.img}" alt="${p.name}" loading="lazy">
+                    </div>
+                    <div class="product-body">
+                      <h4>${p.name}</h4>
+                      <div class="ingredients"><b>Ingredientes:</b> ${p.ingredients||"—"}</div>
+                      <p class="desc">${p.desc}</p>
+                      <div class="product-foot">
+                        <span class="price">${p.price===null?"Consultar":money(p.price)}</span>
+                        <button class="add-btn" onclick="addToCart('${p.id}')">＋ Agregar</button>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              `).join("")}
+            </div>
+          </div>
+          <div class="promo-carousel-nav">
+            <button type="button" id="promoPrev" aria-label="Promo anterior">‹</button>
+            <button type="button" id="promoNext" aria-label="Promo siguiente">›</button>
+          </div>
+          <div class="promo-carousel-dots" id="promoCarouselDots">
+            ${promosList.map((_,i)=>`<button type="button" class="${i===0?"active":""}" data-i="${i}" aria-label="Promo ${i+1}"></button>`).join("")}
+          </div>
+        </div>
+      </section>
+    `;
+  }
+
+  if(cats.includes("Pizzas")){
+    const pizzasList=products.filter(p=>p.cat==="Pizzas");
+    html+=`
+      <section class="menu-group">
+        <div class="menu-title">
+          <div>
+            <h3>🍕 Pizzas</h3>
+            <p>Elegí tus favoritos y sumalos al pedido.</p>
+          </div>
+        </div>
+        <div class="products">
+          ${pizzasList.map(p=>`
+            <article class="product" data-product-id="${p.id}">
+              <div class="product-img">
+                ${p.badge?`<span class="badge badge-${p.badge.type}">${p.badge.text}</span>`:""}
+                <img src="${p.img}" alt="${p.name}" loading="lazy">
+              </div>
+              <div class="product-body">
+                <h4>${p.name}</h4>
+                <div class="ingredients"><b>Ingredientes:</b> ${p.ingredients||"—"}</div>
+                <p class="desc">${p.desc}</p>
+                <div class="product-foot">
+                  <span class="price">${p.price===null?"Consultar":money(p.price)}</span>
+                  <button class="add-btn" onclick="addToCart('${p.id}')">＋ Agregar</button>
+                </div>
+              </div>
+            </article>
+          `).join("")}
+        </div>
+      </section>
+    `;
+  }
+
+  menuContent.innerHTML=html;
+  if(cats.includes("Promos")) initPromoCarousel();
 }
+
+/* ===== LÓGICA DEL CARRUSEL DE PROMOS ===== */
+let promoCarouselIndex=0;
+let promoCarouselTimer=null;
+let promoTouchStartX=0;
+let promoTouchDeltaX=0;
+let promoTouchActive=false;
+
+function initPromoCarousel(){
+  const track=document.getElementById("promoTrack");
+  const dots=[...document.querySelectorAll("#promoCarouselDots button")];
+  const total=track?track.children.length:0;
+  if(!total)return;
+
+  promoCarouselIndex=0;
+  updatePromoCarousel();
+
+  document.getElementById("promoPrev").addEventListener("click",()=>{
+    promoCarouselIndex=(promoCarouselIndex-1+total)%total;
+    updatePromoCarousel();
+  });
+  document.getElementById("promoNext").addEventListener("click",()=>{
+    promoCarouselIndex=(promoCarouselIndex+1)%total;
+    updatePromoCarousel();
+  });
+  dots.forEach((d,i)=>d.addEventListener("click",()=>{
+    promoCarouselIndex=i;
+    updatePromoCarousel();
+  }));
+
+  /* Swipe táctil y con mouse */
+  const viewport=track.parentElement;
+
+  function onStart(x){
+    promoTouchStartX=x;
+    promoTouchDeltaX=0;
+    promoTouchActive=true;
+    if(promoCarouselTimer){clearInterval(promoCarouselTimer);promoCarouselTimer=null;}
+  }
+  function onMove(x){
+    if(!promoTouchActive)return;
+    promoTouchDeltaX=x-promoTouchStartX;
+  }
+  function onEnd(){
+    if(!promoTouchActive)return;
+    promoTouchActive=false;
+    if(Math.abs(promoTouchDeltaX)>40){
+      if(promoTouchDeltaX<0){
+        promoCarouselIndex=(promoCarouselIndex+1)%total;
+      }else{
+        promoCarouselIndex=(promoCarouselIndex-1+total)%total;
+      }
+      updatePromoCarousel();
+    }
+    promoTouchDeltaX=0;
+  }
+
+  viewport.addEventListener("touchstart",e=>onStart(e.touches[0].clientX),{passive:true});
+  viewport.addEventListener("touchmove",e=>onMove(e.touches[0].clientX),{passive:true});
+  viewport.addEventListener("touchend",onEnd);
+  viewport.addEventListener("mousedown",e=>{e.preventDefault();onStart(e.clientX);});
+  viewport.addEventListener("mousemove",e=>{if(promoTouchActive)onMove(e.clientX);});
+  viewport.addEventListener("mouseup",onEnd);
+  viewport.addEventListener("mouseleave",onEnd);
+
+  /* Autoavance cada 6s */
+  promoCarouselTimer=setInterval(()=>{
+    if(promoTouchActive)return;
+    promoCarouselIndex=(promoCarouselIndex+1)%total;
+    updatePromoCarousel();
+  },6000);
+}
+
+function updatePromoCarousel(){
+  const track=document.getElementById("promoTrack");
+  const dots=[...document.querySelectorAll("#promoCarouselDots button")];
+  if(!track)return;
+  track.style.transform=`translateX(-${promoCarouselIndex*100}%)`;
+  dots.forEach((d,i)=>d.classList.toggle("active",i===promoCarouselIndex));
+}
+
+/* ===== RESTO DE LA LÓGICA ===== */
 document.querySelectorAll(".category").forEach(b=>b.addEventListener("click",()=>{currentCat=b.dataset.cat;document.querySelectorAll(".category").forEach(x=>x.classList.toggle("active",x===b));renderMenu()}));
 function addToCart(id){cart[id]=(cart[id]||0)+1;renderCart()}
 function changeQty(id,delta){cart[id]=(cart[id]||0)+delta;if(cart[id]<=0)delete cart[id];renderCart()}
@@ -281,13 +573,20 @@ function removeItem(id){delete cart[id];renderCart()}
 function renderCart(){
  const entries=Object.entries(cart);const count=entries.reduce((s,[,q])=>s+q,0);
  document.getElementById("cartCount").textContent=count;document.getElementById("floatCount").textContent=count;
- document.getElementById("floatingCart").classList.toggle("show",count>0);
+
+ const hasCart=count>0;
+ const heroVisible=document.querySelector(".hero").getBoundingClientRect().bottom>0;
+ const cartBtn=document.getElementById("floatingCart");
+ cartBtn.classList.toggle("show",hasCart);
+ cartBtn.classList.toggle("hide-on-hero",heroVisible);
+ document.getElementById("whatsappFloat").classList.toggle("hide-because-cart",hasCart);
+
  document.getElementById("sendOrder").disabled=count===0;
  const total=entries.reduce((s,[id,q])=>{const p=products.find(x=>x.id===id);return s+(p.price||0)*q},0);
  const hasPending=entries.some(([id])=>products.find(p=>p.id===id).price===null);
  document.getElementById("cartTotal").textContent=money(total)+(hasPending?" + productos a confirmar":"");
  document.getElementById("floatTotal").textContent=money(total)+(hasPending?" +":"");
- document.getElementById("cartItems").innerHTML=entries.length?entries.map(([id,q])=>{const p=products.find(x=>x.id===id);return `<div class="cart-item"><div class="cart-item-main"><img class="cart-thumb" src="${p.img}" alt="${p.name}" loading="lazy"><div><strong>${p.name}</strong><small>${p.price===null?"Precio a confirmar":money(p.price)+" c/u"}</small><div class="qty"><button aria-label="Restar" onclick="changeQty('${id}',-1)">−</button><b>${q}</b><button aria-label="Sumar" onclick="changeQty('${id}',1)">+</button><button class="remove" onclick="removeItem('${id}')">Quitar</button></div></div><div class="line-price">${p.price===null?"A confirmar":money(p.price*q)}</div></div>`}).join(""):'<div class="empty">Todavía no agregaste productos.<br>Elegí algo rico del menú para empezar.</div>';
+ document.getElementById("cartItems").innerHTML=entries.length?entries.map(([id,q])=>{const p=products.find(x=>x.id===id);return `<div class="cart-item"><div class="cart-item-main"><img class="cart-thumb" src="${p.img}" alt="${p.name}" loading="lazy"><div><strong>${p.name}</strong><small>${p.price===null?"Precio a confirmar":money(p.price)+" c/u"}</small><div class="qty"><button aria-label="Restar" onclick="changeQty('${id}',-1)">−</button><b>${q}</b><button aria-label="Sumar" onclick="changeQty('${id}',1)">+</button><button class="remove" onclick="removeItem('${id}')">Quitar</button></div></div></div><div class="line-price">${p.price===null?"A confirmar":money(p.price*q)}</div></div>`}).join(""):'<div class="empty">Todavía no agregaste productos.<br>Elegí algo rico del menú para empezar.</div>';
 }
 document.getElementById("checkoutForm").addEventListener("submit",e=>{
  e.preventDefault();if(!Object.keys(cart).length)return;
@@ -296,85 +595,48 @@ document.getElementById("checkoutForm").addEventListener("submit",e=>{
  const rows=Object.entries(cart).map(([id,q])=>{const p=products.find(x=>x.id===id);return `• ${q} x ${p.name} — ${p.price===null?"precio a confirmar":money(p.price*q)}`});
  const total=Object.entries(cart).reduce((s,[id,q])=>s+(products.find(p=>p.id===id).price||0)*q,0);
  const hasPending=Object.keys(cart).some(id=>products.find(p=>p.id===id).price===null);
- const msg=["Hola GUSTARE, quiero realizar este pedido:","",""+rows.join("\n"),"",`Total estimado: ${money(total)}${hasPending?" + productos a confirmar":""}`,`Nombre: ${name}`,`Entrega: Envío a domicilio`,`Dirección/zona: ${address}`,...(notes?[`Aclaraciones: ${notes}`]:[]),"","¿Me confirman disponibilidad y costo de envío?"].join("\n");
+ const msg=[
+   "Hola GUSTARE, quiero realizar este pedido:",
+   "",
+   rows.join("\n"),
+   "",
+   `Total productos: ${money(total)}${hasPending?" + productos a confirmar":""} (sin envío incluido)`,
+   `Nombre: ${name}`,
+   `Entrega: Envío a domicilio`,
+   `Dirección y zona: ${address}`,
+   ...(notes?[`Aclaraciones: ${notes}`]:[]),
+   "",
+   "El envío se cobra aparte según mi zona.",
+   "Se abona por transferencia previa.",
+   "",
+   "¿Me confirman el costo de envío para mi zona y el total a transferir?"
+ ].join("\n");
  window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(msg),"_blank","noopener");
 });
+
 const promos=[
 {tag:"PROMOCIONES GUSTARE",title:"¡Tu próxima comida favorita te espera!",text:"Descubrí el menú y armá tu pedido en unos pasos."},
-{tag:"PROMOS GUSTARE",title:"3 Muzzas por $27.000",text:"Aprovechá las promos y compartí algo rico."},
-{tag:"ANTOJO RESUELTO",title:"Pizzas y promos",text:"Todo tu pedido en un solo mensaje de WhatsApp."}
+{tag:"HECHO EN EL DÍA",title:"Masa artesanal y ingredientes frescos",text:"Todo preparado en el momento para que llegue calentito."},
+{tag:"PEDÍ FÁCIL",title:"Armá tu pedido en un mensaje",text:"Elegí, agregá al carrito y envialo por WhatsApp en segundos."}
 ];let promoIndex=0;
 function setPromo(i){promoIndex=i;const p=promos[i];document.getElementById("promoKicker").textContent=p.tag;document.getElementById("promoTitle").textContent=p.title;document.getElementById("promoText").textContent=p.text;document.querySelectorAll("#promoDots button").forEach((b,j)=>b.classList.toggle("active",j===i))}
 
-/* ===== CARRUSEL HERO CON FOTOS DE GUSTARE ===== */
 const heroSlides=[...document.querySelectorAll(".hero-slide")];
 let heroIndex=0;
-function setHeroSlide(i){
-  heroIndex=i;
-  heroSlides.forEach((slide,j)=>slide.classList.toggle("active",j===i));
-}
+function setHeroSlide(i){heroIndex=i;heroSlides.forEach((slide,j)=>slide.classList.toggle("active",j===i));}
 setInterval(()=>setHeroSlide((heroIndex+1)%heroSlides.length),4500);
 
-/* ===== CARRUSEL DE BANNERS ===== */
 const bannerSlides=[...document.querySelectorAll(".banner-slide")];
 const bannerDots=[...document.querySelectorAll("#bannerDots button")];
 let bannerIndex=0;
-function setBanner(i){
-  bannerIndex=i;
-  bannerSlides.forEach((s,j)=>s.classList.toggle("active",j===i));
-  bannerDots.forEach((d,j)=>d.classList.toggle("active",j===i));
-}
+function setBanner(i){bannerIndex=i;bannerSlides.forEach((s,j)=>s.classList.toggle("active",j===i));bannerDots.forEach((d,j)=>d.classList.toggle("active",j===i));}
 bannerDots.forEach((d,i)=>d.addEventListener("click",()=>setBanner(i)));
 setInterval(()=>setBanner((bannerIndex+1)%bannerSlides.length),4000);
 
-/* ===== ROTACIÓN SINCRONIZADA: texto del banner + imagen/nombre/desc de las tarjetas de promos ===== */
-const promoVariantState={};
-
-function rotatePromoCardVariants(step){
-  products.filter(p=>p.cat==="Promos"&&p.variants&&p.variants.length>1).forEach(p=>{
-    if(promoVariantState[p.id]===undefined)promoVariantState[p.id]=0;
-    promoVariantState[p.id]=(promoVariantState[p.id]+step+p.variants.length)%p.variants.length;
-    const v=p.variants[promoVariantState[p.id]];
-
-    const card=document.querySelector(`[data-product-id="${p.id}"]`);
-    if(!card)return;
-
-    const wrap=card.querySelector(".product-img");
-    const img=wrap.querySelector("img");
-    const h4=card.querySelector(".product-body h4");
-    const desc=card.querySelector(".product-body p");
-
-    // Fade solo de la imagen
-    if(img&&img.getAttribute("src")!==v.img){
-      wrap.classList.add("rotating");
-      setTimeout(()=>{
-        img.src=v.img;
-        img.alt=v.name;
-        wrap.classList.remove("rotating");
-      },250);
-    }
-
-    // Cambiamos nombre y descripción al instante
-    if(h4)h4.textContent=v.name;
-    if(desc)desc.textContent=v.desc;
-
-    // Actualizamos el producto activo (para el carrito)
-    p.name=v.name;
-    p.desc=v.desc;
-    p.img=v.img;
-  });
-}
-
-/* Un único timer: cambia TEXTO del banner + VARIANTES de las tarjetas cada 5 s */
-setInterval(()=>{
-  setPromo((promoIndex+1)%promos.length);  // cambia el texto del banner amarillo
-  rotatePromoCardVariants(1);              // cambia imagen + nombre + descripción de las tarjetas
-},5000);
-
-/* Puntitos del banner de promos: al tocar, cambia el texto */
+setInterval(()=>setPromo((promoIndex+1)%promos.length),5000);
 document.querySelectorAll("#promoDots button").forEach((b,i)=>b.addEventListener("click",()=>setPromo(i)));
 
-/* ===== GALERÍA: 4 TARJETAS QUE ROTAN MEZCLADAS + VER MÁS DE A 4 ===== */
+/* ===== GALERÍA ===== */
 const galleryUrls=[
 "https://iili.io/nz45jPn.md.jpg","https://iili.io/nz45hMX.md.jpg","https://iili.io/nz45Xnt.md.jpg","https://iili.io/nz45VtI.md.jpg",
 "https://iili.io/nz45OcG.md.jpg","https://iili.io/nz45eSf.md.jpg","https://iili.io/nz45v94.md.jpg","https://iili.io/nz458Al.md.jpg",
@@ -393,135 +655,82 @@ let galleryIndex=0;
 
 function pickRandomIndices(n,exclude=[]){
   const pool=[];
-  for(let i=0;i<galleryUrls.length;i++){
-    if(!exclude.includes(i))pool.push(i);
-  }
-  for(let i=pool.length-1;i>0;i--){
-    const j=Math.floor(Math.random()*(i+1));
-    [pool[i],pool[j]]=[pool[j],pool[i]];
-  }
+  for(let i=0;i<galleryUrls.length;i++){if(!exclude.includes(i))pool.push(i);}
+  for(let i=pool.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pool[i],pool[j]]=[pool[j],pool[i]];}
   return pool.slice(0,n);
 }
-
 let rotationTimer=null;
-
 function rotateVisibleCards(){
   const picks=pickRandomIndices(4);
   rotatingCards.forEach((card,slot)=>{
-    const idx=picks[slot];
-    const url=galleryUrls[idx];
-    const img=card.querySelector("img");
+    const idx=picks[slot];const url=galleryUrls[idx];const img=card.querySelector("img");
     if(img.getAttribute("src")!==url){
       card.classList.add("rotating");
-      setTimeout(()=>{
-        img.src=url;
-        img.alt="GUSTARE pizza";
-        card.classList.remove("rotating");
-      },250);
+      setTimeout(()=>{img.src=url;img.alt="GUSTARE pizza";card.classList.remove("rotating");},250);
     }
     card.dataset.index=idx;
   });
 }
-
-function startRotation(){
-  if(rotationTimer)return;
-  rotationTimer=setInterval(rotateVisibleCards,3500);
-}
-function stopRotation(){
-  clearInterval(rotationTimer);
-  rotationTimer=null;
-}
-
-rotateVisibleCards();
-startRotation();
+function startRotation(){if(rotationTimer)return;rotationTimer=setInterval(rotateVisibleCards,3500);}
+function stopRotation(){clearInterval(rotationTimer);rotationTimer=null;}
+rotateVisibleCards();startRotation();
 
 const shownIndices=new Set();
-[...document.querySelectorAll(".gallery-card")].forEach(c=>{
-  if(c.dataset.index!==undefined)shownIndices.add(Number(c.dataset.index));
-});
-
+[...document.querySelectorAll(".gallery-card")].forEach(c=>{if(c.dataset.index!==undefined)shownIndices.add(Number(c.dataset.index));});
 const BATCH=4;
-
 function addMoreBatch(){
-  const exclude=[...shownIndices];
-  const remaining=galleryUrls.length-exclude.length;
-  if(remaining<=0)return 0;
-  const count=Math.min(BATCH,remaining);
-  const picks=pickRandomIndices(count,exclude);
+  const exclude=[...shownIndices];const remaining=galleryUrls.length-exclude.length;if(remaining<=0)return 0;
+  const count=Math.min(BATCH,remaining);const picks=pickRandomIndices(count,exclude);
   picks.forEach(idx=>{
-    const card=document.createElement("article");
-    card.className="gallery-card";
-    card.dataset.index=idx;
+    const card=document.createElement("article");card.className="gallery-card";card.dataset.index=idx;
     card.innerHTML=`<img src="${galleryUrls[idx]}" alt="GUSTARE pizza" loading="lazy">`;
-    galleryExtra.appendChild(card);
-    card.addEventListener("click",()=>openGallery(idx));
-    shownIndices.add(idx);
+    galleryExtra.appendChild(card);card.addEventListener("click",()=>openGallery(idx));shownIndices.add(idx);
   });
   return picks.length;
 }
-
 galleryMore.addEventListener("click",()=>{
   if(galleryMore.dataset.mode==="less"){
-    galleryExtra.innerHTML="";
-    shownIndices.clear();
-    [...document.querySelectorAll(".gallery-card[data-slot]")].forEach(c=>{
-      shownIndices.add(Number(c.dataset.index));
-    });
-    galleryMore.dataset.mode="more";
-    galleryMore.textContent="VER MÁS FOTOS";
-    startRotation();
-    return;
+    galleryExtra.innerHTML="";shownIndices.clear();
+    [...document.querySelectorAll(".gallery-card[data-slot]")].forEach(c=>{shownIndices.add(Number(c.dataset.index));});
+    galleryMore.dataset.mode="more";galleryMore.textContent="VER MÁS FOTOS";startRotation();return;
   }
-
   addMoreBatch();
   if(shownIndices.size>=galleryUrls.length){
-    galleryMore.dataset.mode="less";
-    galleryMore.textContent="MOSTRAR MENOS";
-    stopRotation();
+    galleryMore.dataset.mode="less";galleryMore.textContent="MOSTRAR MENOS";stopRotation();
   }
 });
-
-function openGallery(i){
-  galleryIndex=i;
-  galleryModalImg.src=galleryUrls[i];
-  galleryModal.classList.add("open");
-  galleryModal.setAttribute("aria-hidden","false");
-  document.body.style.overflow="hidden";
-}
-function closeGallery(){
-  galleryModal.classList.remove("open");
-  galleryModal.setAttribute("aria-hidden","true");
-  document.body.style.overflow="";
-}
-document.querySelectorAll(".gallery-card[data-slot]").forEach(card=>{
-  card.addEventListener("click",()=>openGallery(Number(card.dataset.index)));
-});
+function openGallery(i){galleryIndex=i;galleryModalImg.src=galleryUrls[i];galleryModal.classList.add("open");galleryModal.setAttribute("aria-hidden","false");document.body.style.overflow="hidden";}
+function closeGallery(){galleryModal.classList.remove("open");galleryModal.setAttribute("aria-hidden","true");document.body.style.overflow="";}
+document.querySelectorAll(".gallery-card[data-slot]").forEach(card=>{card.addEventListener("click",()=>openGallery(Number(card.dataset.index)));});
 document.getElementById("galleryClose").addEventListener("click",closeGallery);
-document.getElementById("galleryPrev").addEventListener("click",()=>{
-  galleryIndex=(galleryIndex-1+galleryUrls.length)%galleryUrls.length;
-  galleryModalImg.src=galleryUrls[galleryIndex];
-});
-document.getElementById("galleryNext").addEventListener("click",()=>{
-  galleryIndex=(galleryIndex+1)%galleryUrls.length;
-  galleryModalImg.src=galleryUrls[galleryIndex];
-});
+document.getElementById("galleryPrev").addEventListener("click",()=>{galleryIndex=(galleryIndex-1+galleryUrls.length)%galleryUrls.length;galleryModalImg.src=galleryUrls[galleryIndex];});
+document.getElementById("galleryNext").addEventListener("click",()=>{galleryIndex=(galleryIndex+1)%galleryUrls.length;galleryModalImg.src=galleryUrls[galleryIndex];});
 galleryModal.addEventListener("click",e=>{if(e.target===galleryModal)closeGallery()});
-document.addEventListener("keydown",e=>{
-  if(!galleryModal.classList.contains("open"))return;
-  if(e.key==="Escape")closeGallery();
-  if(e.key==="ArrowLeft")document.getElementById("galleryPrev").click();
-  if(e.key==="ArrowRight")document.getElementById("galleryNext").click();
-});
+document.addEventListener("keydown",e=>{if(!galleryModal.classList.contains("open"))return;if(e.key==="Escape")closeGallery();if(e.key==="ArrowLeft")document.getElementById("galleryPrev").click();if(e.key==="ArrowRight")document.getElementById("galleryNext").click();});
 
-/* ===== OCULTAR BOTONES FLOTANTES AL LLEGAR AL FOOTER ===== */
+/* ===== OCULTAR FLOTANTES EN FOOTER + HERO ===== */
 const footerEl=document.querySelector("footer");
-const floatingEls=[document.getElementById("floatingCart"),document.querySelector(".whatsapp-float")];
+const floatingEls=[document.getElementById("floatingCart"),document.getElementById("whatsappFloat")];
 const footerObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
     floatingEls.forEach(el=>el&&el.classList.toggle("hide-floating",entry.isIntersecting));
   });
 },{threshold:0.1});
 footerObserver.observe(footerEl);
+
+/* Ocultar el botón del carrito cuando el hero está visible */
+const heroEl=document.querySelector(".hero");
+const heroObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    const cart=document.getElementById("floatingCart");
+    if(entry.isIntersecting && cart.classList.contains("show")){
+      cart.classList.add("hide-on-hero");
+    }else{
+      cart.classList.remove("hide-on-hero");
+    }
+  });
+},{threshold:0.15});
+heroObserver.observe(heroEl);
 
 renderMenu();renderCart();
 </script>
