@@ -18,10 +18,10 @@
 <style>
 :root{--yellow:#f5b400;--yellow2:#ffd34d;--bg:#101010;--panel:#1b1b1b;--panel2:#242424;--text:#fff;--muted:#aaa;--green:#25d366}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:85px}body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}button{cursor:pointer;border:0}
-header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-filter:blur(12px);border-bottom:1px solid #343434}.nav{max-width:1240px;margin:auto;min-height:70px;padding:10px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:1000;font-size:27px;letter-spacing:2px;color:var(--yellow);line-height:1}.brand img{width:58px;height:42px;object-fit:contain;filter:invert(1);display:block}.brand span{display:none}.brand small{display:block;color:#fff;font-size:9px;letter-spacing:3px;text-align:center;margin-top:5px}.navlinks{display:flex;gap:22px;align-items:center;font-weight:700;font-size:14px}.navlinks a:hover{color:var(--yellow)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:9px;font-weight:900;background:var(--yellow);color:#111;transition:.2s}.btn:hover,.nav-cta:hover{transform:translateY(-2px);background:var(--yellow2)}.cart-pill{background:#292929;color:white;border:1px solid #444;padding:10px 14px;border-radius:999px;font-weight:800;white-space:nowrap}.cart-pill b{background:var(--yellow);color:#111;border-radius:50%;padding:2px 7px;margin-left:5px}
+header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-filter:blur(12px);border-bottom:1px solid #343434}.nav{max-width:1240px;margin:auto;min-height:70px;padding:10px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:1000;font-size:27px;letter-spacing:2px;color:var(--yellow);line-height:1}.brand img{width:72px;height:52px;object-fit:contain;filter:invert(1);display:block}.brand span{display:none}.brand small{display:block;color:#fff;font-size:9px;letter-spacing:3px;text-align:center;margin-top:5px}.navlinks{display:flex;gap:22px;align-items:center;font-weight:700;font-size:14px}.navlinks a:hover{color:var(--yellow)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:9px;font-weight:900;background:var(--yellow);color:#111;transition:.2s}.btn:hover,.nav-cta:hover{transform:translateY(-2px);background:var(--yellow2)}.cart-pill{background:#292929;color:white;border:1px solid #444;padding:10px 14px;border-radius:999px;font-weight:800;white-space:nowrap}.cart-pill b{background:var(--yellow);color:#111;border-radius:50%;padding:2px 7px;margin-left:5px}
 .hero{min-height:650px;display:flex;align-items:center;position:relative;isolation:isolate;background:#17120b;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;z-index:-3;background:#17120b}.hero-slides{position:absolute;inset:0;z-index:-2;overflow:hidden}.hero-slide{position:absolute;inset:0;background-position:center;background-size:cover;background-repeat:no-repeat;opacity:0;transition:opacity 1s ease}.hero-slide.active{opacity:1}.hero-slides:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.90),rgba(0,0,0,.62) 48%,rgba(0,0,0,.25)),linear-gradient(0deg,rgba(0,0,0,.38),rgba(0,0,0,.08))}
 .hero-inner{max-width:1240px;width:100%;margin:auto;padding:100px 26px 115px;display:flex;flex-direction:column;align-items:center;text-align:center}
-.hero-brand-logo{display:block;width:min(310px,42vw);max-width:100%;height:auto;margin:0 auto 22px;filter:invert(1) drop-shadow(0 10px 22px rgba(0,0,0,.65));object-fit:contain;object-position:center center}
+.hero-brand-logo{display:block;width:min(380px,52vw);max-width:100%;height:auto;margin:0 auto 22px;filter:invert(1) drop-shadow(0 10px 22px rgba(0,0,0,.65));object-fit:contain;object-position:center center}
 .tag{display:inline-block;background:var(--yellow);color:#111;font-size:12px;font-weight:900;letter-spacing:1px;padding:7px 12px;border-radius:4px}.hero h1{font-size:clamp(68px,11vw,145px);line-height:.84;letter-spacing:-5px;margin:22px 0 18px;font-weight:1000;text-shadow:4px 5px 0 #000}.hero h1 span{color:var(--yellow)}.hero h2{font-size:clamp(21px,3vw,34px);letter-spacing:2px}.hero p{max-width:530px;color:#ddd;font-size:17px;margin:15px auto 26px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.btn.outline{background:rgba(0,0,0,.35);border:1px solid white;color:white}.hero-note{margin-top:25px;color:#eee;font-size:13px}
 
 .banner-carousel{max-width:1200px;margin:26px auto 0;padding:0 20px;position:relative}
@@ -67,7 +67,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-f
 .add-btn{background:var(--yellow);color:#111;padding:10px 15px;border-radius:8px;font-weight:1000}.add-btn:hover{background:var(--yellow2)}
 .custom-note{font-size:12px;color:#888;margin-top:10px}
 
-/* ===== CARRUSEL DE PROMOS (Opción A) ===== */
+/* ===== CARRUSEL DE PROMOS ===== */
 .promo-carousel{position:relative;margin-bottom:36px}
 .promo-viewport{overflow:hidden;border-radius:16px}
 .promo-track{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1);touch-action:pan-y}
@@ -156,13 +156,13 @@ header{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.94);backdrop-f
 @media(max-width:560px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.gallery-card:after{width:28px;height:28px;font-size:12px}.gallery-modal{padding:12px}.gallery-nav{left:8px;right:8px}}
 .delivery{background:linear-gradient(#000b,#000d),url("https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1800&q=85") center/cover;text-align:center}.delivery h2{font-size:clamp(34px,6vw,64px);line-height:1.05}.delivery h2 span{color:var(--yellow)}.delivery p{max-width:650px;margin:15px auto;color:#ddd}.delivery strong{display:block;color:var(--yellow);font-size:clamp(32px,5vw,55px);margin:12px}
 .hours{background:var(--yellow);color:#111;text-align:center}.hours h2{font-size:clamp(32px,5vw,55px)}.hours .time{font-size:clamp(25px,4vw,43px);font-weight:1000;margin:8px}.hours p{font-weight:700}
-footer{padding:55px 20px 35px;text-align:center;background:#0a0a0a;border-top:1px solid #292929;color:#aaa}footer .footer-logo{display:block;width:min(210px,55vw);height:auto;max-height:100px;object-fit:contain;margin:0 auto 18px;filter:invert(1) drop-shadow(0 6px 14px rgba(0,0,0,.55))}footer strong{display:block;color:#fff;font-size:24px;letter-spacing:2px}footer a{color:var(--yellow);font-weight:800}
+footer{padding:55px 20px 35px;text-align:center;background:#0a0a0a;border-top:1px solid #292929;color:#aaa}footer .footer-logo{display:block;width:min(300px,68vw);height:auto;max-height:140px;object-fit:contain;margin:0 auto 18px;filter:invert(1) drop-shadow(0 6px 14px rgba(0,0,0,.55))}footer strong{display:block;color:#fff;font-size:24px;letter-spacing:2px}footer a{color:var(--yellow);font-weight:800}
 
 /* ===== BOTÓN FLOTANTE DEL CARRITO ===== */
 .floating-cart{position:fixed;right:12px;bottom:14px;z-index:45;background:var(--yellow);color:#111;padding:14px 18px;border-radius:999px;box-shadow:0 8px 30px #0009;font-weight:1000;display:none;transition:opacity .35s ease, transform .35s ease}
 .floating-cart.show{display:block}
 
-/* ===== BOTÓN FLOTANTE WHATSAPP (+30%) ===== */
+/* ===== BOTÓN FLOTANTE WHATSAPP ===== */
 .whatsapp-float{
   position:fixed;
   right:0;
@@ -188,11 +188,15 @@ footer{padding:55px 20px 35px;text-align:center;background:#0a0a0a;border-top:1p
 .floating-cart.hide-floating,.whatsapp-float.hide-floating{opacity:0;pointer-events:none}
 .floating-cart.hide-on-hero{opacity:0;pointer-events:none;transform:translateY(20px)}
 
-@keyframes logoNeonPulse{0%,100%{filter:invert(1) drop-shadow(0 0 3px rgba(245,180,0,.22)) drop-shadow(0 0 7px rgba(255,211,77,.10))}50%{filter:invert(1) drop-shadow(0 0 6px rgba(245,180,0,.42)) drop-shadow(0 0 13px rgba(255,211,77,.20))}}
+/* ===== PULSO NEÓN DEL LOGO (más notorio) ===== */
+@keyframes logoNeonPulse{
+  0%,100%{filter:invert(1) drop-shadow(0 0 4px rgba(245,180,0,.35)) drop-shadow(0 0 10px rgba(255,211,77,.18));transform:scale(1)}
+  50%{filter:invert(1) drop-shadow(0 0 12px rgba(245,180,0,.85)) drop-shadow(0 0 26px rgba(255,211,77,.55));transform:scale(1.04)}
+}
 .brand img,.hero-brand-logo,footer .footer-logo{animation:logoNeonPulse 2.8s ease-in-out infinite}
 @media(prefers-reduced-motion:reduce){.brand img,.hero-brand-logo,footer .footer-logo{animation:none}}
-@media(max-width:850px){.navlinks{display:none}.nav{padding:10px 15px}.hero{min-height:590px}.hero-inner{padding:90px 20px 100px}.hero:before{background-position:60% center}.hero-brand-logo{width:min(260px,55vw);margin:0 auto 18px}.hero-inner{position:relative;z-index:2}.promo{padding:23px;align-items:flex-start;flex-direction:column}.promo .btn{align-self:flex-start}.quick-info{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.cart-layout{grid-template-columns:1fr}.section{padding:60px 15px}}
-@media(max-width:560px){.brand{font-size:24px}.brand img{width:52px;height:38px}.hero{min-height:570px}.hero h1{font-size:70px;letter-spacing:-3px}.hero p{font-size:15px}.hero-brand-logo{width:min(220px,62vw);margin:0 auto 18px;filter:invert(1) drop-shadow(0 8px 18px rgba(0,0,0,.65))}.hero-inner{position:relative;z-index:2}.hero-actions{flex-direction:column}.hero-actions .btn{width:100%}.promo-wrap{padding:0 12px;margin-top:40px}.promo{min-height:175px}.products{grid-template-columns:1fr}.product{display:grid;grid-template-columns:115px 1fr}.product-img{height:100%;min-height:155px}.product-body{padding:13px}.product h4{font-size:17px}.product p{font-size:12px}.price{font-size:18px}.add-btn{padding:9px 11px}.menu-title{align-items:start;flex-direction:column}.cart-box,.checkout-box{padding:17px}.floating-cart{right:10px;bottom:10px;padding:12px 14px}.whatsapp-float{right:0;bottom:10px;width:39px;height:39px}}
+@media(max-width:850px){.navlinks{display:none}.nav{padding:10px 15px}.hero{min-height:590px}.hero-inner{padding:90px 20px 100px}.hero:before{background-position:60% center}.hero-brand-logo{width:min(320px,62vw);margin:0 auto 18px}.hero-inner{position:relative;z-index:2}.promo{padding:23px;align-items:flex-start;flex-direction:column}.promo .btn{align-self:flex-start}.quick-info{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,minmax(0,1fr))}.cart-layout{grid-template-columns:1fr}.section{padding:60px 15px}}
+@media(max-width:560px){.brand{font-size:24px}.brand img{width:64px;height:46px}.hero{min-height:570px}.hero h1{font-size:70px;letter-spacing:-3px}.hero p{font-size:15px}.hero-brand-logo{width:min(280px,72vw);margin:0 auto 18px;filter:invert(1) drop-shadow(0 8px 18px rgba(0,0,0,.65))}.hero-inner{position:relative;z-index:2}.hero-actions{flex-direction:column}.hero-actions .btn{width:100%}.promo-wrap{padding:0 12px;margin-top:40px}.promo{min-height:175px}.products{grid-template-columns:1fr}.product{display:grid;grid-template-columns:115px 1fr}.product-img{height:100%;min-height:155px}.product-body{padding:13px}.product h4{font-size:17px}.product p{font-size:12px}.price{font-size:18px}.add-btn{padding:9px 11px}.menu-title{align-items:start;flex-direction:column}.cart-box,.checkout-box{padding:17px}.floating-cart{right:10px;bottom:10px;padding:12px 14px}.whatsapp-float{right:0;bottom:34px;width:39px;height:39px}}
 </style>
 </head>
 <body>
@@ -308,7 +312,7 @@ PEDIR POR WHATSAPP
 <label for="customerName">Tu nombre</label><input id="customerName" placeholder="¿Cómo te llamás?" required>
 <input type="hidden" id="deliveryType" value="Envío a domicilio">
 <div id="addressWrap"><label for="customerAddress">Dirección y zona (para calcular el envío)</label><input id="customerAddress" placeholder="Calle, número, barrio o localidad" required></div>
-<label for="customerNotes">Aclaraciones (opcional)</label><textarea id="customerNotes" placeholder="Ej.: sin aceitunas, tocar timbre, medio de pago..."></textarea>
+<label for="customerNotes">Aclaraciones (opcional)</label><textarea id="customerNotes" placeholder="Ej.: sin aceitunas, tocar timbre, sin sal..."></textarea>
 <button class="checkout-btn" id="sendOrder" type="submit" disabled>ENVIAR PEDIDO POR WHATSAPP</button>
 <p class="fine">Al tocar el botón se abrirá WhatsApp con el detalle completo para que puedas revisarlo y enviarlo.</p>
 </form>
@@ -396,7 +400,6 @@ const products=[
 let cart={};let currentCat="Todas";
 const menuContent=document.getElementById("menuContent");
 
-/* ===== RENDER DEL MENÚ CON CARRUSEL DE PROMOS ===== */
 function renderMenu(){
   const cats=currentCat==="Todas"?["Promos","Pizzas"]:[currentCat];
 
@@ -514,7 +517,6 @@ function initPromoCarousel(){
     updatePromoCarousel();
   }));
 
-  /* Swipe táctil y con mouse */
   const viewport=track.parentElement;
 
   function onStart(x){
@@ -549,7 +551,6 @@ function initPromoCarousel(){
   viewport.addEventListener("mouseup",onEnd);
   viewport.addEventListener("mouseleave",onEnd);
 
-  /* Autoavance cada 6s */
   promoCarouselTimer=setInterval(()=>{
     if(promoTouchActive)return;
     promoCarouselIndex=(promoCarouselIndex+1)%total;
@@ -708,7 +709,6 @@ document.getElementById("galleryNext").addEventListener("click",()=>{galleryInde
 galleryModal.addEventListener("click",e=>{if(e.target===galleryModal)closeGallery()});
 document.addEventListener("keydown",e=>{if(!galleryModal.classList.contains("open"))return;if(e.key==="Escape")closeGallery();if(e.key==="ArrowLeft")document.getElementById("galleryPrev").click();if(e.key==="ArrowRight")document.getElementById("galleryNext").click();});
 
-/* ===== OCULTAR FLOTANTES EN FOOTER + HERO ===== */
 const footerEl=document.querySelector("footer");
 const floatingEls=[document.getElementById("floatingCart"),document.getElementById("whatsappFloat")];
 const footerObserver=new IntersectionObserver(entries=>{
@@ -718,7 +718,6 @@ const footerObserver=new IntersectionObserver(entries=>{
 },{threshold:0.1});
 footerObserver.observe(footerEl);
 
-/* Ocultar el botón del carrito cuando el hero está visible */
 const heroEl=document.querySelector(".hero");
 const heroObserver=new IntersectionObserver(entries=>{
   entries.forEach(entry=>{
